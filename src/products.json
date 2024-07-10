@@ -1,0 +1,21 @@
+[
+    {
+        "id":1,
+        "title": "Sakız",
+        "price": 1
+    },{
+        "id":2,
+        "title": "Ekmek",
+        "price": 5
+    },
+    {
+        "id":3,
+        "title": "Zeytinyağı",
+        "price": 50
+    },
+    {
+        "id":4,
+        "title": "Un",
+        "price": 15
+    }
+]
