@@ -1,0 +1,18 @@
+.header{
+    background-color: rgb(97, 181, 37);
+   height: 60px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 24px;
+   color: #fff;
+   position: sticky;
+   top : 0;
+   margin-bottom: 10px;
+
+}
+
+.header span{
+    margin: 0 10px;
+    font-weight: bold;
+}

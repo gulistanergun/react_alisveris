@@ -1,23 +1,25 @@
 import React, { Component } from 'react'
+import './Header.css'
 
  function Header({total, money}) {
   return (
-    <div >
+    < >
 
       {total > 0 && money - total !== 0 &&(
-        <div className='header'>Harcanabilir  kalan limit {money - total} $</div>
+        <div className="header">Harcanabilir  kalan limit <span>{money - total}</span>  $</div>
       ) }
 
       {total === 0 &&(
-        <div className='header'>Harcanabilir limit {money - total} $ </div>
+        <div className="header">Harcanabilir limit <span>{money - total}</span>  $ </div>
       ) }
 
       {money - total === 0 &&(
-        <div className='header'> Kullanbiliabilir limit yetersiz </div>
+        <div className="header"> Kullanbiliabilir limit yetersiz </div>
       ) }
 
       
-    </div>
+
+    </>
   )
 }
 

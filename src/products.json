@@ -2,20 +2,25 @@
     {
         "id":1,
         "title": "Sakız",
-        "price": 1
+        "price": 1,
+         "image": "../img/sakız.jpeg"
     },{
         "id":2,
         "title": "Ekmek",
-        "price": 5
+        "price": 5,
+        "image":"../img/ekmek.jpg"
+
     },
     {
         "id":3,
         "title": "Zeytinyağı",
-        "price": 50
+        "price": 50,
+        "image": "../img/zeytinyagi.webp"
     },
     {
         "id":4,
         "title": "Un",
-        "price": 15
+        "price": 15,
+        "image": "../img/un.jpg"
     }
 ]

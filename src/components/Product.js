@@ -1,5 +1,8 @@
 import React from 'react'
 import {useState} from 'react'
+import SakızImg from '../img/sakız.jpeg' ;
+import ekmekImg from '../img/ekmek.jpg';
+import './Product.css'
 
  function Product({money,total,product, basket, setBasket}) {
 
@@ -36,24 +39,15 @@ import {useState} from 'react'
   return (
     <>
     <div className="product">
+        <img src={product.image} alt="" />
         <h6>{product.title}</h6>
         <div className="price"> $ {product.price} </div>
         <div className="actions">
-            <button disabled={!basketItem} onClick={removeBasket}>Sat</button>
+            <button className='sell-btn' disabled={!basketItem} onClick={removeBasket}>Sat</button>
             <span className='amount'>{basketItem && basketItem.amount || 0}</span>
-            <button disabled={total + product.price > money} onClick={addBasket}>Satın Al</button>
+            <button className='buy-btn' disabled={total + product.price > money} onClick={addBasket}>Satın Al</button>
         </div>
-        <style jsx>
-          {`
-           .product{
-              padding: 10px;
-              background: #fff;
-              border: 1px solid #ddd;
-              margin-bottom: 20px; 
-           }   
-          `}
-        </style>
-      
+        
     </div>
     </>
   )
